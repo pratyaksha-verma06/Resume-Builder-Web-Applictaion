@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="interface">
+       <h1>Resume Builder</h1>
+       <div class="container">
+         <div class="form">
+            <form>
+                <h2>Enter Details</h2>
+                <hr>
+                
+                <div class="input-group">
+                    <input type="text" id="name" placeholder=" " name="name" required>
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder=" " name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="contact" placeholder=" " name="contact" required>
+                    <label for="contact">Phone Number</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="education" placeholder=" " name="education" required></textarea>
+                    <label for="education">Education</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="skills" placeholder=" " name="skills"required></textarea>
+                    <label for="skills">Skills</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="projects" placeholder=" " name="projects"  required></textarea>
+                    <label for="projects">Projects</label>
+                </div>
+                <div class="buttons">
+                    <button type="button">Generate Resume</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+         </div>
+         <div class="preview">
+            <h2>Resume Preview</h2>
+            <hr>
+         </div>
+         </div>
+    </div>
+
+    
+<script src="script.js"></script>
+</body>
+</html>
