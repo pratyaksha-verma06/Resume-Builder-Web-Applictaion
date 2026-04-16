@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Entry of details section -->
     <div class="interface">
        <h1>Resume Builder</h1>
        <div class="container">
@@ -28,26 +29,46 @@
                     <label for="contact">Phone Number</label>
                 </div>
                 <div class="input-group">
-                    <textarea id="education" placeholder=" " name="education" required></textarea>
+                    <textarea id="education" class="big" placeholder=" " name="education" required></textarea>
                     <label for="education">Education</label>
                 </div>
                 <div class="input-group">
-                    <textarea id="skills" placeholder=" " name="skills"required></textarea>
+                    <textarea id="skills" class="big" placeholder=" " name="skills"required></textarea>
                     <label for="skills">Skills</label>
                 </div>
                 <div class="input-group">
-                    <textarea id="projects" placeholder=" " name="projects"  required></textarea>
+                    <textarea id="projects" class="big" placeholder=" " name="projects"  required></textarea>
                     <label for="projects">Projects</label>
                 </div>
                 <div class="buttons">
                     <button type="button">Generate Resume</button>
+                    <br>
                     <button type="reset">Reset</button>
                 </div>
             </form>
          </div>
+
+         <!-- live preview -->
          <div class="preview">
             <h2>Resume Preview</h2>
             <hr>
+            <h2 id="p-name">Your Name</h2>
+            <p id="p-email">Email</p>
+            <p id="p-contact">Phone Number</p>
+            <hr>
+            <!-- <div class="education-clmn"> -->
+              <h2>Education</h2>
+              <p id="p-education">
+                <!-- <h4>Class 10<sup>th</sup></h4> -->
+              </p>
+            <!-- </div> -->
+            
+            <hr>
+            <h2>Skills</h2>
+            <p id="p-skills"></p>
+            <hr>
+            <h2>Projects</h2>
+            <p id="p-projects">Projects</p>
          </div>
          </div>
     </div>
