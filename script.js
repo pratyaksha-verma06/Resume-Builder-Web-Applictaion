@@ -4,7 +4,12 @@ function linktopreview(inputId,previewId){
     const preview=document.getElementById(previewId);
 
     input.addEventListener("input",()=>{
+       if(input.tagName==="TEXTAREA"){
+        preview.innerHTML=input.value.replace("/\n\g","<br>")||" ";
+       }
+        else{
         preview.innerText=input.value||" ";
+       } 
     });
 }
 
