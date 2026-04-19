@@ -68,9 +68,16 @@ width: 60%;
 padding: 10px;
 border: 2px solid #334155;
 border-radius: 10px;
-background: #1e293b;
+/* background: #1e293b; */
+ background: white;
+color: black;
 }
 
+#resume-content {
+    padding: 20px;
+    background: white;
+    color: black;
+}
 
 .buttons{
     margin: 1rem;
@@ -104,7 +111,7 @@ button:hover{
 }
 
 .form, .preview{
-    box-shadow: 0 4px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 

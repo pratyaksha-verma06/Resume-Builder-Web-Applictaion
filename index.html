@@ -41,9 +41,9 @@
                     <label for="projects">Projects</label>
                 </div>
                 <div class="buttons">
-                    <button type="button">Generate Resume</button>
+                    <button type="reset" id="resetbtn">Reset</button>
                     <br>
-                    <button type="reset">Reset</button>
+                    <button type="button" id="downloadBtn">Download</button>
                 </div>
             </form>
          </div>
@@ -51,29 +51,28 @@
          <!-- live preview -->
          <div class="preview">
             <h2>Resume Preview</h2>
-            <hr>
+            <div id="resume-content">
             <h2 id="p-name">Your Name</h2>
             <p id="p-email">Email</p>
             <p id="p-contact">Phone Number</p>
             <hr>
             <!-- <div class="education-clmn"> -->
               <h2>Education</h2>
-              <ul id="p-education">
-                <!-- <h4>Class 10<sup>th</sup></h4> -->
-              </ul>
-            <!-- </div> -->
+              <p id="p-education"></p>
             
             <hr>
             <h2>Skills</h2>
             <p id="p-skills"></p>
             <hr>
             <h2>Projects</h2>
-            <p id="p-projects">Projects</p>
-         </div>
-         </div>
+            <p id="p-projects"></p>
+            </div>
+        </div>
     </div>
+</div>
 
-    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>   
 <script src="script.js"></script>
 </body>
 </html>
