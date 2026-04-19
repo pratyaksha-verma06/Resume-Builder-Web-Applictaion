@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume-Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="interface">
+      <div class="top-bar">
+        <h1>Resume Builder</h1>
+
+        <button id="logoutBtn" onclick="logout()">
+          <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="form">
+          <form>
+            <h2><i class="fa-solid fa-pen-to-square"></i> Enter Details</h2>
+            <hr />
+
+            <div class="input-group">
+              <input type="text" id="name" placeholder=" " required />
+              <label for="name">Full Name</label>
+            </div>
+
+            <div class="input-group">
+              <input type="email" id="email" placeholder=" " required />
+              <label for="email">Email</label>
+            </div>
+
+            <div class="input-group">
+              <input type="tel" id="contact" placeholder=" " required />
+              <label for="contact">Phone</label>
+            </div>
+
+            <div class="input-group">
+              <textarea
+                id="education"
+                class="big"
+                placeholder=" "
+                required
+              ></textarea>
+              <label for="education">Education</label>
+            </div>
+
+            <div class="input-group">
+              <textarea
+                id="skills"
+                class="big"
+                placeholder=" "
+                required
+              ></textarea>
+              <label for="skills">Skills</label>
+            </div>
+
+            <div class="input-group">
+              <textarea
+                id="projects"
+                class="big"
+                placeholder=" "
+                required
+              ></textarea>
+              <label for="projects">Projects</label>
+              <div class="input-group">
+                <textarea
+                  id="certification"
+                  class="big"
+                  placeholder=" "
+                  required
+                ></textarea>
+              </div>
+              <div class="input-group"></div>
+              <label for="certification">Certification</label>
+            </div>
+
+            <div class="buttons">
+              <button type="reset" id="resetbtn">
+                <i class="fa-solid fa-rotate-left"></i> Reset
+              </button>
+
+              <button type="button" id="downloadBtn">
+                <i class="fa-solid fa-download"></i> Download
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="preview">
+          <h2>Resume Preview</h2>
+
+          <div id="resume-content">
+            <div class="resume-header">
+              <h1 id="p-name">Your Name</h1>
+
+              <div class="contact">
+                <p id="p-email">Email</p>
+                <p id="p-contact">Phone</p>
+              </div>
+            </div>
+
+            <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+            <div id="p-education"></div>
+
+            <h2><i class="fa-solid fa-code"></i> Skills</h2>
+            <div id="p-skills"></div>
+
+            <h2><i class="fa-solid fa-folder-open"></i> Projects</h2>
+            <div id="p-projects"></div>
+
+            <h2><i class="fa-solid fa-folder-open"></i> Certification</h2>
+            <div id="p-certification"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
