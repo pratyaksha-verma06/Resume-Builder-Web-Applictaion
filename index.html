@@ -1,78 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Entry of details section -->
-    <div class="interface">
-       <h1>Resume Builder</h1>
-       <div class="container">
-         <div class="form">
-            <form>
-                <h2>Enter Details</h2>
-                <hr>
-                
-                <div class="input-group">
-                    <input type="text" id="name" placeholder=" " name="name" required>
-                    <label for="name">Full Name</label>
-                </div>
-                <div class="input-group">
-                    <input type="email" id="email" placeholder=" " name="email" required>
-                    <label for="email">Email</label>
-                </div>
-                <div class="input-group">
-                    <input type="tel" id="contact" placeholder=" " name="contact" required>
-                    <label for="contact">Phone Number</label>
-                </div>
-                <div class="input-group">
-                    <textarea id="education" class="big" placeholder=" " name="education" required></textarea>
-                    <label for="education">Education</label>
-                </div>
-                <div class="input-group">
-                    <textarea id="skills" class="big" placeholder=" " name="skills"required></textarea>
-                    <label for="skills">Skills</label>
-                </div>
-                <div class="input-group">
-                    <textarea id="projects" class="big" placeholder=" " name="projects"  required></textarea>
-                    <label for="projects">Projects</label>
-                </div>
-                <div class="buttons">
-                    <button type="reset" id="resetbtn">Reset</button>
-                    <br>
-                    <button type="button" id="downloadBtn">Download</button>
-                </div>
-            </form>
-         </div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Builder</title>
 
-         <!-- live preview -->
-         <div class="preview">
-            <h2>Resume Preview</h2>
-            <div id="resume-content">
-            <h2 id="p-name">Your Name</h2>
-            <p id="p-email">Email</p>
-            <p id="p-contact">Phone Number</p>
-            <hr>
-            <!-- <div class="education-clmn"> -->
-              <h2>Education</h2>
-              <p id="p-education"></p>
-            
-            <hr>
-            <h2>Skills</h2>
-            <p id="p-skills"></p>
-            <hr>
-            <h2>Projects</h2>
-            <p id="p-projects"></p>
-            </div>
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<div class="interface">
+  <h1>Resume Builder</h1>
+
+  <div class="container">
+
+    <div class="form">
+      <form>
+        <h2><i class="fa-solid fa-pen-to-square"></i> Enter Details</h2>
+        <hr>
+
+        <div class="input-group">
+          <input type="text" id="name" placeholder=" " required>
+          <label for="name">Full Name</label>
         </div>
+
+        <div class="input-group">
+          <input type="email" id="email" placeholder=" " required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="input-group">
+          <input type="tel" id="contact" placeholder=" " required>
+          <label for="contact">Phone</label>
+        </div>
+
+        <div class="input-group">
+          <textarea id="education" class="big" placeholder=" " required></textarea>
+          <label for="education">Education</label>
+        </div>
+
+        <div class="input-group">
+          <textarea id="skills" class="big" placeholder=" " required></textarea>
+          <label for="skills">Skills</label>
+        </div>
+
+        <div class="input-group">
+          <textarea id="projects" class="big" placeholder=" " required></textarea>
+          <label for="projects">Projects</label>
+        </div>
+
+        <div class="buttons">
+          <button type="reset" id="resetbtn">
+            <i class="fa-solid fa-rotate-left"></i> Reset
+          </button>
+
+          <button type="button" id="downloadBtn">
+            <i class="fa-solid fa-download"></i> Download
+          </button>
+        </div>
+
+      </form>
     </div>
+
+    <div class="preview">
+      <h2>Resume Preview</h2>
+
+      <div id="resume-content">
+
+        <div class="resume-header">
+          <h1 id="p-name">Your Name</h1>
+
+          <div class="contact">
+            <p id="p-email">Email</p>
+            <p id="p-contact">Phone</p>
+          </div>
+        </div>
+
+        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+        <div id="p-education"></div>
+
+        <h2><i class="fa-solid fa-code"></i> Skills</h2>
+        <div id="p-skills"></div>
+
+        <h2><i class="fa-solid fa-folder-open"></i> Projects</h2>
+        <div id="p-projects"></div>
+
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
