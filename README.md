@@ -84,8 +84,8 @@ git clone https://github.com/your-username/resume-builder.git
 
 ## 🙋‍♀️ Author
 
-**Pratyaksha Verma**
-Frontend Developer
+**Pratyaksha Verma**<br>
+Aspiring Devloper
 
 ---
 
