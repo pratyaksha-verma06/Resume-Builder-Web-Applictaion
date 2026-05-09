@@ -24,7 +24,7 @@ linktopreview("email","p-email");
 linktopreview("contact","p-contact");
 linktopreview("education","p-education");
 linktopreview("skills","p-skills");
-linktopreview("project","p-project");
+linktopreview("projects","p-projects");
 linktopreview("certification","p-certification");
 
 //  RESET 
@@ -59,6 +59,4 @@ async function downloadPDF() {
     pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
     pdf.save("resume.pdf");
 }
-
-document.getElementById("downloadBtn")
-    .addEventListener("click", downloadPDF);
+document.getElementById("downloadBtn").addEventListener("click", downloadPDF);
